@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e7e7;
+}
+
+.box {
+    width: 30%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #e7e7e7;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    border-radius: 20px;
+}
+
+.input_box {
+    position: relative;
+}
+
+
+.box label {
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 15px;
+    left: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(79, 83, 83);
+    pointer-events: none;
+    transition: 5s ease;
+}
+
+
+.input_box input:focus~label,
+.input_box input:valid~label {
+    top: -37px;
+}
+
+
+.box div {
+    width: 100%;
+}
+
+
+.box input:first-child{
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.box input {
+    width: 100%;
+    border: 1px solid white;
+    outline: none;
+    background-color: white;
+    color: rgb(89, 93, 94, 0.966);
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.btn_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_box button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #70b002;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn_box button:hover {
+    background-color: #598b01;
+}
+
+.btn_box button:active {
+    transform: scale(0.8, 0.8);
+}
+
+
+.box h1 {
+    font-size: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(79, 83, 83);
+    margin-top: 15px;
+}
